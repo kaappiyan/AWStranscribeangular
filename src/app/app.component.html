@@ -1,0 +1,18 @@
+<div class="App">
+  <br />
+  Transcribe Audio
+  <div className="Text">
+    <div>
+      <h3>Speech to text</h3>
+    </div>
+  </div>
+  <div className="audioRecorder">
+    <button (click)="startRecording()" *ngIf="!recording">
+      Start Recording
+    </button>
+    <button (click)="stopRecording()" *ngIf="recording">Stop Recording</button>
+  </div>
+  <div>
+    <p>{{ response }}</p>
+  </div>
+</div>
